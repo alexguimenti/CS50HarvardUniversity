@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <span class="navbar-brand" href="#"><i class="fa fa-code"></i></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active" href="projects.html"></i><span>Projects</span></a>
+        <a class="nav-item nav-link active" href="https://github.com/alexguimenti" target="_blank"></i><i class="fa fa-github"></i></a>
+        <a class="nav-item nav-link active" href="https://www.linkedin.com/in/alexandre-guimenti-a8a4b910a/" target="_blank"></i><i class="fa fa-linkedin"></i></a>    
+      </div>
+    </div>
+  </nav>
+  <div id="display">
+    <p>Player:  </p> 
+    <img src="" border="0" height="50">
+  </div>
+
+  <div class="canvas">
+    <div id="a1" class="space" play=""></div>
+    <div id="a2" class="space" play=""></div>
+    <div id="a3" class="space" play=""></div>
+
+    <div id="b1" class="space" play=""></div>
+    <div id="b2" class="space" play=""></div>
+    <div id="b3" class="space" play=""></div>
+
+    <div id="c1" class="space" play=""></div>
+    <div id="c2" class="space" play=""></div>
+    <div id="c3" class="space" play=""></div>
+  </div>
+
+  <div id="button">
+  <button onclick="newGame()">New Game</button>
+  </div>
+
+  <script type="text/javascript" src="tictac.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+</body>
+</html>
