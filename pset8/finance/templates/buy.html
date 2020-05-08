@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <form action="/buy" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="shares" placeholder="Shares" type="number">
+        </div>
+        <button class="btn btn-primary" id="submit" type="submit" disabled>Buy</button>
+    </form>
+    
+    <script>
+        var input1 = document.querySelectorAll('[name="symbol"]')[0];
+        var input2 = document.querySelectorAll('[name="shares"]')[0];
+        var submit = document.querySelector("#submit");
+        
+        input1.onkeyup = checkInputs;
+        input2.onkeyup = checkInputs;
+        
+        function checkInputs() {
+            if (input1.value != '' & input2.value != '') {
+                submit.disabled = false;
+            } else {
+                submit.disabled = true;
+            }
+        }
+    </script>
+{% endblock %}
